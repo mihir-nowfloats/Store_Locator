@@ -1,0 +1,30 @@
+:root{    
+    --primary-color: #FD7332;
+    --secondary-color: #FD722D33;
+
+    --success-background: #1CAA2B14;
+    --success-text: #1CAA2B;
+
+    --primary-text: #4A1902;
+    --disabled-text: #828282;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+img,
+svg{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+
+body{
+    background-color: #F0F0F0;
+}
