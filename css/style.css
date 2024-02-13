@@ -134,6 +134,7 @@
 
 .allOutlet {
     width: 100vw;
+    margin: 0 auto;
 }
 
 
@@ -150,7 +151,8 @@
 }
 
 .allOutletContainer {
-    width: 1346px;
+    /* width: 1346px; */
+    width: 100%;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -159,7 +161,7 @@
 .allOutletCardsContainer {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     /* width: calc(1266px + 80px); */
     width: 100%;
     /* height: 736px; */
@@ -459,86 +461,6 @@
     color: #fff;
 }
 
-
-@media screen and (max-width: 768px) {
-    .banner {
-        min-width: 90vw;
-    }
-
-    .outlets-locator-container {
-        width: 100vw;
-        height: min-content;
-        padding: 10px;
-        border-radius: 8px;
-        gap: 1rem;
-        justify-content: flex-start;
-    }
-
-    .outlets-locator-heading {
-        font-size: 1rem;
-    }
-
-    .inputs-container {
-        width: 100%;
-    }
-
-    .searchByType>input {
-        width: 90%;
-    }
-
-    .searchByType>img {
-        /* width: 5%; */
-        height: 1rem;
-
-    }
-
-    .searchByOption {
-        flex-direction: column;
-    }
-
-    .searchByOption {
-        height: fit-content;
-    }
-
-    .searchByOption>select,
-    .searchByOption>button {
-        width: 100%;
-        height: 38px;
-    }
-
-    .allOutletContainer {
-        width: 100vw;
-        margin: 0px auto;
-    }
-
-    .allOutletCardsContainer {
-        width: 100vw;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        /* padding: 0; */
-    }
-
-    .outletCard {
-        width: calc(100vw - 10px);
-    }
-
-    .allOutletContainer {
-        flex-direction: column-reverse;
-    }
-
-    .paginationButtonContainer {
-        display: flex;
-        justify-content: center;
-        width: 100vw;
-    }
-    .testimonialsContainer {
-        padding: 0px 10%;
-    }
-}
-
-
 @media screen and (max-width: 1200px) {
     .sectionTitle {
         font-size: 24px;
@@ -602,3 +524,89 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .banner {
+        min-width: 90vw;
+    }
+
+    .outlets-locator-container {
+        width: 100vw;
+        height: min-content;
+        padding: 10px;
+        border-radius: 8px;
+        gap: 1rem;
+        justify-content: flex-start;
+    }
+
+    .outlets-locator-heading {
+        font-size: 1rem;
+    }
+
+    .inputs-container {
+        width: 100%;
+    }
+
+    .searchByType>input {
+        width: 90%;
+    }
+
+    .searchByType>img {
+        width: 5%;
+        height: 1rem;
+
+    }
+
+    .searchByOption {
+        flex-direction: column;
+    }
+
+    .searchByOption {
+        height: fit-content;
+    }
+
+    .searchByOption>select,
+    .searchByOption>button {
+        width: 100%;
+        height: 38px;
+    }
+
+    .allOutletContainer {
+        width: 100vw;
+        margin: 0px auto;
+    }
+
+    .allOutletCardsContainer {
+        width: 100vw;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0; */
+    }
+
+    .outletCard {
+        width: calc(100vw - 10px);
+    }
+
+    .allOutletContainer {
+        flex-direction: column-reverse;
+    }
+
+    .paginationButtonContainer {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    .testimonialsContainer {
+        padding: 0px 5%;
+    }
+    .mediaGalleryContainer{
+        padding: 0px 5%;
+    }
+    .brochuresContainer{
+        padding: 0px 5%; 
+    }
+}
+
+
