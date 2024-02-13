@@ -474,8 +474,10 @@ function paginationHandler() {
             btn.innerText = pageNumber;
             if (pageNumber === index) {
                 btn.classList.add("active");
+                btn.style.color = 'white';
             } else {
                 btn.classList.remove("active");
+                btn.style.color = 'var(--primary-color)';
             }
         });
 
@@ -543,6 +545,7 @@ function paginationHandler() {
 
 
 function handleSearchStateCity() {
+    document.querySelector(".searchByOption>button").style.opacity = "0.7";
     const states = {
         "New Delhi": ["Delhi", "Noida", "Gurgaon"],
         "Karnataka": ["Bangalore", "Mysore", "Hubli"],
@@ -573,7 +576,14 @@ function handleSearchStateCity() {
             option.textContent = city;
             cityDropdown.appendChild(option);
         });
+        if(stateDropdown.value && cityDropdown.value){
+            document.querySelector(".searchByOption>button").style.opacity = "1";
+        } else {
+            document.querySelector(".searchByOption>button").style.opacity = "0.7";
+        }
     });
+
+
 }
 let testimonialsData = [
     {
